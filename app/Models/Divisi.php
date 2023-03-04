@@ -124,7 +124,7 @@ class Divisi
         [
             "nama" => "Silvia Wulandari",
             "jabatan" => "Anggota",
-            "foto" => "silvia.gif",
+            "foto" => "wulandari.gif",
             "divisi" => "agama",
         ],
         [
@@ -278,15 +278,15 @@ class Divisi
             "divisi" => "infokom",
         ],
         [
-            "nama" => "Khairul Aqram",
-            "jabatan" => "Anggota",
-            "foto" => "aqram.gif",
-            "divisi" => "infokom",
-        ],
-        [
             "nama" => "Wanda Baskoro",
             "jabatan" => "Anggota",
             "foto" => "wanda.gif",
+            "divisi" => "infokom",
+        ],
+        [
+            "nama" => "Khairul Aqram",
+            "jabatan" => "Anggota",
+            "foto" => "aqram.gif",
             "divisi" => "infokom",
         ],
         [
@@ -317,12 +317,6 @@ class Divisi
             "nama" => "Nur jannah",
             "jabatan" => "Anggota",
             "foto" => "jannah.gif",
-            "divisi" => "infokom",
-        ],
-        [
-            "nama" => "Syahru Ramadhan",
-            "jabatan" => "Anggota",
-            "foto" => "syahru.gif",
             "divisi" => "infokom",
         ],
         [
