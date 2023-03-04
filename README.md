@@ -12,6 +12,7 @@
     - Use **`php artisan db:seed`** for [seeding the database](https://laravel.com/docs/9.x/seeding#running-seeders).
     - Use `php artisan migrate:fresh` for fresh installation.
     - Use `php artisan migrate:fresh --seed` for fresh installation and seeding the database.
+    - Use `php artisan storage:link` for creating a symbolic link from `public/storage` to `storage/app/public`.
 
 > **Warning!** If you use `php artisan migrate:fresh` command, all tables will be dropped and recreated. **All data in the tables will be lost**.
 
