@@ -107,7 +107,7 @@
         document.querySelector('.modal-body img').src = "img/product-contoh.jpg";
       }
       document.querySelector('.modal-body p').innerHTML ='Deskripsi : <br>' + product.description;
-      document.querySelector('.modal-body .d-grid a').href = "https://api.whatsapp.com/send?phone=6287798747798&text=Assalamu'alaikum%20Kak%20Saya%20ingin%20bertanya%20seputar%20produk%20" + product.name + "%20dari%20HIMATIF%20Shop";
+      document.querySelector('.modal-body .d-grid a').href = "https://api.whatsapp.com/send?phone=6282229139665&text=Assalamu'alaikum%20Kak%20Saya%20ingin%20bertanya%20seputar%20produk%20" + product.name + "%20dari%20IMATA%20Shop";
     });
   });
 </script>
