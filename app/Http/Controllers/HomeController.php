@@ -19,7 +19,7 @@ class HomeController extends Controller
         $this->meta->description = 'Ikatan Mahasiswa Aceh Tamiang (IMATA) adalah sebuah organisasi yang terdiri dari mahasiswa-mahasiswa Aceh Tamiang yang berkuliah di Lhokseumawe - Aceh Utara. IMATA bertujuan untuk mempererat tali silaturahmi antara mahasiswa Aceh Tamiang, serta untuk memajukan dan mengembangkan potensi-potensi yang ada di Aceh Tamiang.';
         $this->meta->url = 'https://imata.site';
         $this->meta->type = 'website';
-        $this->meta->image = 'https://imata.site/img/logo.png';
+        $this->meta->image = 'https://imata.site/img/hero.jpg';
     }
 
     public function index()
