@@ -80,21 +80,9 @@ class Divisi
             "divisi" => "agama",
         ],
         [
-            "nama" => "Nurul Hikmah",
-            "jabatan" => "Anggota",
-            "foto" => "hikmah.gif",
-            "divisi" => "agama",
-        ],
-        [
             "nama" => "Ainun Fatwa",
             "jabatan" => "Anggota",
             "foto" => "ainun.gif",
-            "divisi" => "agama",
-        ],
-        [
-            "nama" => "Siti Hariani",
-            "jabatan" => "Anggota",
-            "foto" => "hariani.gif",
             "divisi" => "agama",
         ],
         [
@@ -122,6 +110,12 @@ class Divisi
             "divisi" => "agama",
         ],
         [
+            "nama" => "Nurul Hikmah",
+            "jabatan" => "Anggota",
+            "foto" => "hikmah.gif",
+            "divisi" => "agama",
+        ],
+        [
             "nama" => "Silvia Wulandari",
             "jabatan" => "Anggota",
             "foto" => "wulandari.gif",
@@ -133,6 +127,12 @@ class Divisi
             "foto" => "ferdy.gif",
             "divisi" => "agama",
         ],
+        [
+            "nama" => "Siti Hariani",
+            "jabatan" => "Anggota",
+            "foto" => "hariani.gif",
+            "divisi" => "agama",
+        ],
 
         // Kaderisasi
         [
@@ -142,33 +142,9 @@ class Divisi
             "divisi" => "kaderisasi",
         ],
         [
-            "nama" => "Khairul Anisa",
-            "jabatan" => "Anggota",
-            "foto" => "nisa.gif",
-            "divisi" => "kaderisasi",
-        ],
-        [
-            "nama" => "Amelia Ashri Putri",
-            "jabatan" => "Anggota",
-            "foto" => "amel.gif",
-            "divisi" => "kaderisasi",
-        ],
-        [
             "nama" => "Putri Ulfah Syahridha",
             "jabatan" => "Anggota",
             "foto" => "ulfah.gif",
-            "divisi" => "kaderisasi",
-        ],
-        [
-            "nama" => "Fery Adriansyah",
-            "jabatan" => "Anggota",
-            "foto" => "fery.gif",
-            "divisi" => "kaderisasi",
-        ],
-        [
-            "nama" => "Sri Suci Nurmala Sari",
-            "jabatan" => "Anggota",
-            "foto" => "suci.gif",
             "divisi" => "kaderisasi",
         ],
         [
@@ -184,6 +160,36 @@ class Divisi
             "divisi" => "kaderisasi",
         ],
         [
+            "nama" => "Tri Suhandina",
+            "jabatan" => "Anggota",
+            "foto" => "tri.gif",
+            "divisi" => "kaderisasi",
+        ],
+        [
+            "nama" => "Khairul Anisa",
+            "jabatan" => "Anggota",
+            "foto" => "nisa.gif",
+            "divisi" => "kaderisasi",
+        ],
+        [
+            "nama" => "Amelia Ashri Putri",
+            "jabatan" => "Anggota",
+            "foto" => "amel.gif",
+            "divisi" => "kaderisasi",
+        ],
+        [
+            "nama" => "Fery Adriansyah",
+            "jabatan" => "Anggota",
+            "foto" => "fery.gif",
+            "divisi" => "kaderisasi",
+        ],
+        [
+            "nama" => "Sri Suci Nurmala Sari",
+            "jabatan" => "Anggota",
+            "foto" => "suci.gif",
+            "divisi" => "kaderisasi",
+        ],
+        [
             "nama" => "Rizqan Tayyiba",
             "jabatan" => "Anggota",
             "foto" => "rizqan.gif",
@@ -193,12 +199,6 @@ class Divisi
             "nama" => "Atururi Husaini Fadillah",
             "jabatan" => "Anggota",
             "foto" => "atururi.gif",
-            "divisi" => "kaderisasi",
-        ],
-        [
-            "nama" => "Tri Suhandina",
-            "jabatan" => "Anggota",
-            "foto" => "tri.gif",
             "divisi" => "kaderisasi",
         ],
 
@@ -213,6 +213,24 @@ class Divisi
             "nama" => "Cindi Maharani",
             "jabatan" => "Anggota",
             "foto" => "cindi.gif",
+            "divisi" => "sekretariat",
+        ],
+        [
+            "nama" => "Yulia Tryani",
+            "jabatan" => "Anggota",
+            "foto" => "yulia.gif",
+            "divisi" => "sekretariat",
+        ],
+        [
+            "nama" => "Yola Deviani",
+            "jabatan" => "Anggota",
+            "foto" => "yola.gif",
+            "divisi" => "sekretariat",
+        ],
+        [
+            "nama" => "Zheiraldo Harris",
+            "jabatan" => "Anggota",
+            "foto" => "harris.gif",
             "divisi" => "sekretariat",
         ],
         [
@@ -234,33 +252,15 @@ class Divisi
             "divisi" => "sekretariat",
         ],
         [
-            "nama" => "Zheiraldo Harris",
-            "jabatan" => "Anggota",
-            "foto" => "harris.gif",
-            "divisi" => "sekretariat",
-        ],
-        [
             "nama" => "Fajar Permadani",
             "jabatan" => "Anggota",
             "foto" => "fajar.gif",
             "divisi" => "sekretariat",
         ],
         [
-            "nama" => "Yola Deviani",
-            "jabatan" => "Anggota",
-            "foto" => "yola.gif",
-            "divisi" => "sekretariat",
-        ],
-        [
             "nama" => "Meisya Aprillia",
             "jabatan" => "Anggota",
             "foto" => "meisya.gif",
-            "divisi" => "sekretariat",
-        ],
-        [
-            "nama" => "Yulia Tryani",
-            "jabatan" => "Anggota",
-            "foto" => "yulia.gif",
             "divisi" => "sekretariat",
         ],
         [
@@ -302,6 +302,12 @@ class Divisi
             "divisi" => "infokom",
         ],
         [
+            "nama" => "Kristi Enjelita",
+            "jabatan" => "Anggota",
+            "foto" => "kristi.gif",
+            "divisi" => "infokom",
+        ],
+        [
             "nama" => "Mei Syahdila",
             "jabatan" => "Anggota",
             "foto" => "mei.gif",
@@ -323,12 +329,6 @@ class Divisi
             "nama" => "Syahru Ramadhan",
             "jabatan" => "Anggota",
             "foto" => "syahru.gif",
-            "divisi" => "infokom",
-        ],
-        [
-            "nama" => "Kristi Enjelita",
-            "jabatan" => "Anggota",
-            "foto" => "kristi.gif",
             "divisi" => "infokom",
         ],
         [
@@ -358,15 +358,15 @@ class Divisi
             "divisi" => "humas",
         ],
         [
-            "nama" => "Hafiz Ambiya Azhari",
+            "nama" => "Tiwa Kusuma",
             "jabatan" => "Anggota",
-            "foto" => "hafiz.gif",
+            "foto" => "tiwa.gif",
             "divisi" => "humas",
         ],
         [
-            "nama" => "Nuraini Eka",
+            "nama" => "Hafiz Ambiya Azhari",
             "jabatan" => "Anggota",
-            "foto" => "eka.gif",
+            "foto" => "hafiz.gif",
             "divisi" => "humas",
         ],
         [
@@ -376,9 +376,9 @@ class Divisi
             "divisi" => "humas",
         ],
         [
-            "nama" => "Rehan",
+            "nama" => "Arif",
             "jabatan" => "Anggota",
-            "foto" => "rehan.gif",
+            "foto" => "arif.gif",
             "divisi" => "humas",
         ],
         [
@@ -388,15 +388,21 @@ class Divisi
             "divisi" => "humas",
         ],
         [
+            "nama" => "Rehan",
+            "jabatan" => "Anggota",
+            "foto" => "rehan.gif",
+            "divisi" => "humas",
+        ],
+        [
             "nama" => "Aji Priansyah",
             "jabatan" => "Anggota",
             "foto" => "aji.gif",
             "divisi" => "humas",
         ],
         [
-            "nama" => "Arif",
+            "nama" => "Nuraini Eka",
             "jabatan" => "Anggota",
-            "foto" => "arif.gif",
+            "foto" => "eka.gif",
             "divisi" => "humas",
         ],
         [
@@ -405,12 +411,7 @@ class Divisi
             "foto" => "sandi.gif",
             "divisi" => "humas",
         ],
-        [
-            "nama" => "Tiwa Kusuma",
-            "jabatan" => "Anggota",
-            "foto" => "tiwa.gif",
-            "divisi" => "humas",
-        ],
+
 
         // kwh
         [
@@ -426,27 +427,9 @@ class Divisi
             "divisi" => "kwh",
         ],
         [
-            "nama" => "Sari Amalia",
-            "jabatan" => "Anggota",
-            "foto" => "lia.gif",
-            "divisi" => "kwh",
-        ],
-        [
-            "nama" => "Menty Hajizah",
-            "jabatan" => "Anggota",
-            "foto" => "menty.gif",
-            "divisi" => "kwh",
-        ],
-        [
             "nama" => "Fitri Anjani",
             "jabatan" => "Anggota",
             "foto" => "fitri.gif",
-            "divisi" => "kwh",
-        ],
-        [
-            "nama" => "O K M Zaky",
-            "jabatan" => "Anggota",
-            "foto" => "zaky.gif",
             "divisi" => "kwh",
         ],
         [
@@ -479,6 +462,24 @@ class Divisi
             "foto" => "wulan.gif",
             "divisi" => "kwh",
         ],
+        [
+            "nama" => "O K M Zaky",
+            "jabatan" => "Anggota",
+            "foto" => "zaky.gif",
+            "divisi" => "kwh",
+        ],
+        [
+            "nama" => "Sari Amalia",
+            "jabatan" => "Anggota",
+            "foto" => "lia.gif",
+            "divisi" => "kwh",
+        ],
+        [
+            "nama" => "Menty Hajizah",
+            "jabatan" => "Anggota",
+            "foto" => "menty.gif",
+            "divisi" => "kwh",
+        ],
 
         // Seni
         [
@@ -488,15 +489,9 @@ class Divisi
             "divisi" => "seni",
         ],
         [
-            "nama" => "Arsya Ardana",
-            "jabatan" => "Anggo",
-            "foto" => "arsya.gif",
-            "divisi" => "seni",
-        ],
-        [
-            "nama" => "Siti Nurhaliza",
+            "nama" => "Khadijah Vany",
             "jabatan" => "Anggota",
-            "foto" => "siti.gif",
+            "foto" => "khadijah.gif",
             "divisi" => "seni",
         ],
         [
@@ -518,24 +513,6 @@ class Divisi
             "divisi" => "seni",
         ],
         [
-            "nama" => "Khadijah Vany",
-            "jabatan" => "Anggota",
-            "foto" => "khadijah.gif",
-            "divisi" => "seni",
-        ],
-        [
-            "nama" => "Widya Hartanti",
-            "jabatan" => "Anggota",
-            "foto" => "hartanti.gif",
-            "divisi" => "seni",
-        ],
-        [
-            "nama" => "Sapina Tiarani",
-            "jabatan" => "Anggota",
-            "foto" => "sapina.gif",
-            "divisi" => "seni",
-        ],
-        [
             "nama" => "Yasya Almira",
             "jabatan" => "Anggota",
             "foto" => "yasya.gif",
@@ -546,6 +523,98 @@ class Divisi
             "jabatan" => "Anggota",
             "foto" => "meisita.gif",
             "divisi" => "seni",
+        ],
+        [
+            "nama" => "Sapina Tiarani",
+            "jabatan" => "Anggota",
+            "foto" => "sapina.gif",
+            "divisi" => "seni",
+        ],
+        [
+            "nama" => "Widya Hartanti",
+            "jabatan" => "Anggota",
+            "foto" => "hartanti.gif",
+            "divisi" => "seni",
+        ],
+        [
+            "nama" => "Arsya Ardana",
+            "jabatan" => "Anggo",
+            "foto" => "arsya.gif",
+            "divisi" => "seni",
+        ],
+        [
+            "nama" => "Siti Nurhaliza",
+            "jabatan" => "Anggota",
+            "foto" => "siti.gif",
+            "divisi" => "seni",
+        ],
+
+        // Olahraga
+        [
+            "nama" => "Syahrul Ramadhana",
+            "jabatan" => "Ketua",
+            "foto" => "syahrul.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Abdul Rais",
+            "jabatan" => "Anggota",
+            "foto" => "rais.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Amir Azhari",
+            "jabatan" => "Anggota",
+            "foto" => "amir.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Ardhira Ramadhani",
+            "jabatan" => "Anggota",
+            "foto" => "ardhira.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "M Agung Rinaldi",
+            "jabatan" => "Anggota",
+            "foto" => "agung.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "M Fikri Juliandre",
+            "jabatan" => "Anggota",
+            "foto" => "fikri.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "M Syahputra",
+            "jabatan" => "Anggota",
+            "foto" => "putra.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Rahmita Ayu",
+            "jabatan" => "Anggota",
+            "foto" => "rahmita.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Ridho Kurniawan",
+            "jabatan" => "Anggota",
+            "foto" => "ridho.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Sevia Ayuni",
+            "jabatan" => "Anggota",
+            "foto" => "sevia.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Syifa Ariqah",
+            "jabatan" => "Anggota",
+            "foto" => "arifa.gif",
+            "divisi" => "olahraga",
         ],
     ];
 

@@ -40,8 +40,10 @@ class DivisiController extends Controller
             $nama_divisi = 'Divisi Hubungan Masyarakat';
         } else if ($nama_divisi == 'kwh') {
             $nama_divisi = 'Divisi Kewirausahaan';
+        } else if ($nama_divisi == 'seni') {
+            $nama_divisi = 'Divisi Seni dan Budaya';
         } else {
-            $nama_divisi = 'Divisi Eni dan Budaya';
+            $nama_divisi = 'Pemuda dan Olahraga';
         }
 
         $this->meta->keywords = 'divisi ' . $nama_divisi . ' imata lhokseumawe - aceh utara, divisi imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';

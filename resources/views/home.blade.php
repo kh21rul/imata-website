@@ -145,6 +145,11 @@
             <h4 class="title"><a href="/divisi/seni">SENI DAN BUDAYA</a></h4>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
+          <div class="icon-box">
+            <h4 class="title"><a href="/divisi/olahraga">Pemuda dan Olahraga</a></h4>
+          </div>
+        </div>
       </div>
     </div>
   </section><!-- End divisi Section -->

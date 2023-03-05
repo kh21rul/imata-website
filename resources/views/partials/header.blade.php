@@ -19,6 +19,7 @@
                   <li><a href="/divisi/humas">Humas</a></li>
                   <li><a href="/divisi/kwh">Kewirausahaan</a></li>
                   <li><a href="/divisi/seni">Seni dan Budaya</a></li>
+                  <li><a href="/divisi/olahraga">Pemuda dan Olahraga</a></li>
                 </ul>
               </li>
             </ul>
