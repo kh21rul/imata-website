@@ -581,21 +581,15 @@ class Divisi
             "divisi" => "olahraga",
         ],
         [
-            "nama" => "M Fikri Juliandre",
-            "jabatan" => "Anggota",
-            "foto" => "fikri.gif",
-            "divisi" => "olahraga",
-        ],
-        [
-            "nama" => "M Syahputra",
-            "jabatan" => "Anggota",
-            "foto" => "putra.gif",
-            "divisi" => "olahraga",
-        ],
-        [
             "nama" => "Rahmita Ayu",
             "jabatan" => "Anggota",
             "foto" => "rahmita.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "Sevia Ayuni",
+            "jabatan" => "Anggota",
+            "foto" => "sevia.gif",
             "divisi" => "olahraga",
         ],
         [
@@ -605,9 +599,15 @@ class Divisi
             "divisi" => "olahraga",
         ],
         [
-            "nama" => "Sevia Ayuni",
+            "nama" => "M Fikri Juliandre",
             "jabatan" => "Anggota",
-            "foto" => "sevia.gif",
+            "foto" => "fikri.gif",
+            "divisi" => "olahraga",
+        ],
+        [
+            "nama" => "M Syahputra",
+            "jabatan" => "Anggota",
+            "foto" => "putra.gif",
             "divisi" => "olahraga",
         ],
         [
