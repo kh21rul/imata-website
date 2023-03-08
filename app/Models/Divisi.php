@@ -234,15 +234,21 @@ class Divisi
             "divisi" => "sekretariat",
         ],
         [
-            "nama" => "Sri Widiya",
-            "jabatan" => "Anggota",
-            "foto" => "widiya.gif",
-            "divisi" => "sekretariat",
-        ],
-        [
             "nama" => "Srik Wardani",
             "jabatan" => "Anggota",
             "foto" => "wardani.gif",
+            "divisi" => "sekretariat",
+        ],
+        [
+            "nama" => "Meisya Aprillia",
+            "jabatan" => "Anggota",
+            "foto" => "meisya.gif",
+            "divisi" => "sekretariat",
+        ],
+        [
+            "nama" => "Sri Widiya",
+            "jabatan" => "Anggota",
+            "foto" => "widiya.gif",
             "divisi" => "sekretariat",
         ],
         [
@@ -255,12 +261,6 @@ class Divisi
             "nama" => "Fajar Permadani",
             "jabatan" => "Anggota",
             "foto" => "fajar.gif",
-            "divisi" => "sekretariat",
-        ],
-        [
-            "nama" => "Meisya Aprillia",
-            "jabatan" => "Anggota",
-            "foto" => "meisya.gif",
             "divisi" => "sekretariat",
         ],
         [
