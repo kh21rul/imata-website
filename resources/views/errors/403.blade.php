@@ -15,7 +15,7 @@
             <h2>UPPSSS !!.</h2>
             <p class="text-muted">Wkwk mau ngapai? halaman halaman ini gaboleh diakses ya. Silahkan hubungi kami apabila ini merupakan kesalahan
             </p>
-            <a href="/" class="text-success"><p><i class="bi bi-arrow-left"></i> Back To Home</p></a>
+            <a href="/" class="text-warning"><p><i class="bi bi-arrow-left"></i> Back To Home</p></a>
           </div>
         </div>
       </div>

@@ -25,11 +25,6 @@
     <link rel="stylesheet" href="{{ asset('css/justifiedGallery.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
 
-    <!-- =======================================================
-    * Developed By: IPTEK HIMATIF UNIMAL 2022
-    * Frontend Develop By: Fajar Rivaldi Chan
-    * Backend Develop By: Muhammad Bayu Juhri, M. Akbar Husain, Kairul Akram, Gilang Ramadhan Purba
-    ======================================================== -->
 </head>
 
 <body>
@@ -52,7 +47,7 @@
                 @endif
 
                 <img src="{{ asset('img/logo4.png') }}" width="200" alt="Logo">
-                <p class="mb-4 pt-3">Login sistem manajemen website dan aplikasi HIMATIF</p>
+                <p class="mb-4 pt-3">Login sistem manajemen website dan aplikasi IMATA</p>
                 <form action="/login" method="post">
                     @csrf
                 <div class="form-group first">

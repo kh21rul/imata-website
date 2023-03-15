@@ -11,7 +11,7 @@ class Sejarah
         <p>Ikatan Mahasiswa Aceh Tamiang (IMATA) didirikan di Lhokseumawe pada tanggal Tujuh Bulan April Tahun Dua Ribu Tiga belas (07/04/2013). Organisasi ini terbentuk atas inisiatif dari sekelompok mahasiswa yang berasal dari Aceh Tamiang dan sedang menempuh pendidikan di berbagai perguruan tinggi daerah Kota Lhokseumawe dan Aceh Utara. Mereka memiliki kesamaan latar belakang dan seringkali bertemu dalam kegiatan nongkrong di sekitar kampus.</p>
             <p>Latar belakang terbentuknya IMATA berasal dari keinginan para mahasiswa Aceh Tamiang untuk mempererat tali silaturahmi dan solidaritas antar sesama mahasiswa yang berasal dari daerah yang sama. Selain itu, mereka juga ingin memajukan dan mengembangkan potensi-potensi yang ada di Aceh Tamiang, serta memberikan kontribusi positif dalam pembangunan daerah.</p>
             <p>Dalam perjalanan sejarahnya, IMATA telah menjadi organisasi mahasiswa yang diakui dan memiliki peran yang penting dalam memajukan daerah asal mahasiswanya. Keberadaan IMATA diharapkan dapat menjadi inspirasi bagi organisasi mahasiswa lainnya untuk berkontribusi positif dalam memajukan daerahnya masing-masing.</p>
-            <p><strong>Tujuan IMATA</strong> adalah menampung seluruh element mahasiswa Tamiang yang berkuliah di Lhokseumawe - Aceh Utara menuju kehidupan kampus kritis yang bertanggung jawab, dinamin, demokratis dan harmonis.</p>
+            <p><strong>Tujuan IMATA</strong> adalah menampung seluruh element mahasiswa Tamiang yang berkuliah di Lhokseumawe - Aceh Utara menuju kehidupan kampus kritis yang bertanggung jawab, dinamis, demokratis dan harmonis.</p>
             <h2 class="judul pt-4">
                 Fungsi IMATA
             </h2>                      
