@@ -11,13 +11,13 @@ class Divisi
         // Teras
         [
             "nama" => "Nuhari Azman",
-            "jabatan" => "Ketua",
+            "jabatan" => "Ketua Umum",
             "foto" => "nuhari.gif",
             "divisi" => "teras",
         ],
         [
             "nama" => "Andika Al Imran",
-            "jabatan" => "Anggota",
+            "jabatan" => "Wakil Ketua Umum",
             "foto" => "andika.gif",
             "divisi" => "teras",
         ],
