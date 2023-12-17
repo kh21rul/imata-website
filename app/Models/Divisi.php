@@ -2,9 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
 class Divisi
 {
     private static $pengurus = [
@@ -22,7 +19,7 @@ class Divisi
             "divisi" => "teras",
         ],
         [
-            "nama" => "rezkya Nurdiani",
+            "nama" => "Rezkya Nurdiani",
             "jabatan" => "Sekretaris Umum",
             "foto" => "diani.png",
             "divisi" => "teras",

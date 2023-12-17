@@ -27,11 +27,11 @@
                 <div class="card-body">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade active show" id="komen" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="table-responsive">
-                            <table class="table table-striped">
+                        <div class="table-responsive" >
+                            <table class="table table-striped text-center" id="table-1">
                             <thead>
                                 <tr>
-                                <th class="text-center">NO</th>
+                                <th>NO</th>
                                 <th>Nama</th>
                                 <th>Email</th>
                                 <th>Artikel</th>
@@ -40,12 +40,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @php
-                                    $start = ($comments->currentPage() - 1) * $comments->perPage() + 1;
-                                @endphp
                                 @foreach ($comments as $comment)
                                 <tr>
-                                    <td>{{ $start++ }}</td>
+                                    <td>{{ $loop->iteration }}</td>
                                     <td>{{ $comment->name }}</td>
                                     <td>{{ $comment->email }}</td>
                                     <td>{{ $comment->post->title }}</td>
@@ -64,7 +61,6 @@
                                 @endforeach
                             </tbody>
                             </table>
-                            {{ $comments->appends(['start' => $start])->links() }}
                         </div>
                     </div>
                 </div>

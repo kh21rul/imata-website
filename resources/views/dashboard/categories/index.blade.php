@@ -13,7 +13,7 @@
         </div>
         <div class="section-body">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="card card-primary">
                         <div class="card-header">
                             <h4>Tambah Kategori</h4>
@@ -56,25 +56,22 @@
                                 </div>
                             @endif
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped text-center" id="table-1">
                                 <thead>
                                     <tr>
                                     <th>NO</th>
                                     <th>Jenis</th>
-                                    <th>Post</th>
-                                    <th class="text-right">Action</th>
+                                    <th>Jumlah Post</th>
+                                    <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @php
-                                        $start = ($categories->currentPage() - 1) * $categories->perPage() + 1;
-                                    @endphp
                                     @foreach ($categories as $category)
                                         <tr>
-                                        <td>{{ $start++ }}</td>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $category->name }}</td>
                                         <td>{{ $category->posts->count() }}</td>
-                                        <td class="text-right">
+                                        <td>
                                             <div class="btn-group mb-3" role="group" aria-label="Basic example">
                                             <a href="/dashboard/categories/{{ $category->slug }}/edit" type="button" class="btn btn-warning" ><i class="fas fa-pen-alt"></i></a>
                                             <form action="/dashboard/categories/{{ $category->slug }}" method="post">
@@ -88,7 +85,6 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            {{ $categories->appends(['start' => $start])->links() }}
                         </div>
                         </div>
                     </div>

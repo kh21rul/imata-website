@@ -16,7 +16,7 @@ class AdminCommentController extends Controller
     {
         return view('dashboard.comments.index', [
             'title' => 'Comments',
-            'comments' => Comment::latest()->paginate(5),
+            'comments' => Comment::latest()->get(),
         ]);
     }
 

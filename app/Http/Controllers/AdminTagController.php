@@ -18,7 +18,7 @@ class AdminTagController extends Controller
     {
         return view('dashboard.tags.index', [
             'title' => 'Tags',
-            'tags' => Tag::latest()->paginate(5),
+            'tags' => Tag::latest()->get(),
         ]);
     }
 

@@ -18,7 +18,7 @@ class AdminCategoryController extends Controller
     {
         return view('dashboard.categories.index', [
             'title' => 'Categories',
-            'categories' => Category::latest()->paginate(5),
+            'categories' => Category::latest()->get(),
         ]);
     }
 
