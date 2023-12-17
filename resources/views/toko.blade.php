@@ -121,7 +121,7 @@
                 document.querySelector('.modal-body p').innerHTML = 'Deskripsi : <br>' + product
                     .description;
                 document.querySelector('.modal-body .d-grid a').href =
-                    "https://api.whatsapp.com/send?phone=6282235030037&text=Assalamu'alaikum%20Kak%20Saya%20ingin%20bertanya%20seputar%20produk%20" +
+                    "https://api.whatsapp.com/send?phone=6282293987201&text=Assalamu'alaikum%20Kak%20Saya%20ingin%20bertanya%20seputar%20produk%20" +
                     product.name + "%20dari%20IMATA%20Shop";
             });
         });
