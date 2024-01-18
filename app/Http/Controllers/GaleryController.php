@@ -16,9 +16,9 @@ class GaleryController extends Controller
         $this->meta->keywords = 'galery foto berita imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Galery foto berita dan artikel mengenai Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-        $this->meta->url = 'https://imata.site/galery';
+        $this->meta->url = 'https://imata.web.id/galery';
         $this->meta->type = 'galery';
-        $this->meta->image = 'https://imata.site/img/logo.png';
+        $this->meta->image = 'https://imata.web.id/img/logo.png';
     }
 
     public function index()

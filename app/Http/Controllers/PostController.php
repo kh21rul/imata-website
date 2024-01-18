@@ -20,9 +20,9 @@ class PostController extends Controller
         $this->meta->keywords = 'berita imata lhokseumawe - aceh utara, artikel imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Berita dan artikel mengenai Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-        $this->meta->url = 'https://imata.site/blog';
+        $this->meta->url = 'https://imata.web.id/blog';
         $this->meta->type = 'blog';
-        $this->meta->image = 'https://imata.site/img/logo.png';
+        $this->meta->image = 'https://imata.web.id/img/logo.png';
     }
 
     public function index()
@@ -33,7 +33,7 @@ class PostController extends Controller
             $title = ' mengenai ' . $category->name;
             $this->meta->keywords = $category->name . ', ' . $this->meta->keywords;
             $this->meta->description = 'Berita dan artikel mengenai ' . $category->name . ' di Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-            $this->meta->url = 'https://imata.site/blog?category=' . $category->slug;
+            $this->meta->url = 'https://imata.web.id/blog?category=' . $category->slug;
         }
 
         if (request('tag')) {
@@ -41,7 +41,7 @@ class PostController extends Controller
             $title = ' dengan tag ' . $tag->name;
             $this->meta->keywords = $tag->name . ', ' . $this->meta->keywords;
             $this->meta->description = 'Berita dan artikel dengan tag ' . $tag->name . ' di Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-            $this->meta->url = 'https://imata.site/blog?tag=' . $tag->slug;
+            $this->meta->url = 'https://imata.web.id/blog?tag=' . $tag->slug;
         }
 
         if (request('author')) {
@@ -49,7 +49,7 @@ class PostController extends Controller
             $title = ' dari ' . $author->name;
             $this->meta->keywords = $author->name . ', ' . $this->meta->keywords;
             $this->meta->description = 'Berita dan artikel dari ' . $author->name . ' di Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-            $this->meta->url = 'https://imata.site/blog?author=' . $author->username;
+            $this->meta->url = 'https://imata.web.id/blog?author=' . $author->username;
         }
 
         return view('posts', [
@@ -71,9 +71,9 @@ class PostController extends Controller
 
         $this->meta->author = $post->author->username;
         $this->meta->description = $post->excerpt;
-        $this->meta->url = 'https://imata.site/blog/' . $post->slug;
+        $this->meta->url = 'https://imata.web.id/blog/' . $post->slug;
         $this->meta->type = 'article';
-        $this->meta->image = 'https://imata.site/storage/' . $post->image;
+        $this->meta->image = 'https://imata.web.id/storage/' . $post->image;
 
 
         return view('post', [
