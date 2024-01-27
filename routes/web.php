@@ -14,6 +14,7 @@ use App\Http\Controllers\AdminTagController;
 use App\Http\Controllers\AdminCommentController;
 use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\ProductController;
+use Spatie\Sitemap\SitemapGenerator;
 
 /*
 |--------------------------------------------------------------------------
