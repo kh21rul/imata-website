@@ -39,7 +39,7 @@
 }
 
 #header .logo a span {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 #header .logo img {
@@ -54,7 +54,7 @@
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
     padding: 0;
@@ -105,7 +105,7 @@
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: #f7d70a;
+    background-color: #ffc107;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -122,7 +122,7 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .navbar .dropdown ul {
@@ -156,7 +156,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .navbar .dropdown:hover > ul {
@@ -189,7 +189,7 @@
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
     color: #222222;
@@ -265,7 +265,7 @@
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .navbar-mobile .getstarted,
@@ -300,7 +300,7 @@
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -343,7 +343,7 @@
 }
 
 #hero h1 span {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 #hero h2 {
@@ -364,12 +364,12 @@
     border-radius: 8px;
     transition: 0.5s;
     color: #fff;
-    background: #f7d70a;
+    background: #ffc107;
     text-decoration: none !important;
 }
 
 #hero .btn-get-started:hover {
-    background: #b69b00;
+    background: #d8a306;
 }
 
 #hero .btn-watch-video {
@@ -383,7 +383,7 @@
 }
 
 #hero .btn-watch-video i {
-    color: #f7d70a;
+    color: #ffc107;
     font-size: 32px;
     transition: 0.3s;
     line-height: 0;
@@ -391,11 +391,11 @@
 }
 
 #hero .btn-watch-video:hover {
-    color: #f7d70a;
+    color: #d8a306;
 }
 
 #hero .btn-watch-video:hover i {
-    color: #3b8af2;
+    color: #d8a306;
 }
 
 @media (min-width: 1024px) {
@@ -605,7 +605,7 @@ section {
 }
 
 .divisi .icon-box:hover::before {
-    background: #f7d70a;
+    background: #d8a306;
     top: 0;
     border-radius: 0px;
 }
@@ -657,7 +657,7 @@ section {
 }
 
 .berita .card .title a:hover {
-    color: #f7d70a;
+    color: #ffc107;
     text-decoration: none;
 }
 
@@ -707,7 +707,7 @@ section {
 }
 
 #footer .footer-links .sosmed i:hover {
-    color: #f7d70a !important;
+    color: #ffc107 !important;
 }
 
 #footer .footer-top {
@@ -758,7 +758,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 #footer .copyright {
@@ -834,14 +834,14 @@ section {
 # Blog
 --------------------------------------------------------------*/
 .blog .search input {
-    border: 1.5px solid #f7d70a;
+    border: 1.5px solid #ffc107;
     border-radius: 30px;
     font-size: 14px;
     padding-left: 40px;
 }
 
 .blog .search button {
-    border: 2px solid #f7d70a;
+    border: 2px solid #ffc107;
     border-radius: 0px 30px 30px 0;
     padding-left: 30px;
     padding-right: 30px;
@@ -880,7 +880,7 @@ section {
 }
 
 .blog .thumb .entry-title a:hover {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .blog .thumb .entry-meta {
@@ -959,7 +959,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .blog .entry .entry-meta {
@@ -1013,7 +1013,7 @@ section {
 }
 
 .tag a:hover {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .komen {
@@ -1168,7 +1168,7 @@ section {
 
 .toko input {
     border-radius: 10px;
-    border: 1.5px solid #f7d70a;
+    border: 1.5px solid #ffc107;
 }
 
 .toko-item h4 {
@@ -1189,7 +1189,7 @@ section {
 .toko-item a:hover {
     padding-top: 20px;
     text-align: center;
-    color: #f7d70a;
+    color: #ffc107;
     font-weight: 600;
     text-decoration: none;
 }
@@ -1323,7 +1323,7 @@ section {
 }
 
 .event .card a:hover {
-    color: #f7d70a;
+    color: #ffc107;
 }
 
 .event .card p {
