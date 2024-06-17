@@ -1,6 +1,10 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
+    {{-- Tangkap session & Muculkan modal sweetalert --}}
+    <div class="flash-success" data-flashsuccess="{{ session('success') }}"></div>
+    <div class="flash-failed" data-flashfailed="{{ session('failed') }}"></div>
+
     <div class="main-content">
         <section class="section">
             <div class="section-header">
@@ -55,11 +59,6 @@
                                 <h4>Tags</h4>
                             </div>
                             <div class="card-body">
-                                @if (session('success'))
-                                    <div class="alert alert-success">
-                                        {{ session('success') }}
-                                    </div>
-                                @endif
                                 <div class="table-responsive">
                                     <table class="table table-striped text-center" id="table-1">
                                         <thead>
@@ -83,10 +82,10 @@
                                                                 type="button" class="btn btn-warning"><i
                                                                     class="fas fa-pen-alt"></i></a>
                                                             <form action="/dashboard/tags/{{ $tag->slug }}"
-                                                                method="post">
+                                                                method="post" class="delete-form">
                                                                 @csrf
                                                                 @method('delete')
-                                                                <button type="submit" class="btn btn-danger btn-del"><i
+                                                                <button type="submit" class="btn btn-danger"><i
                                                                         class="fas fa-trash-alt"></i></button>
                                                             </form>
                                                         </div>
@@ -111,6 +110,54 @@
             fetch('/dashboard/categories/checkSlug?name=' + name.value)
                 .then(response => response.json())
                 .then(data => slug.value = data.slug)
+        });
+    </script>
+@endsection
+
+@section('page-script')
+    <script>
+        const flashSuccess = $(".flash-success").data("flashsuccess");
+        const flashFailed = $(".flash-failed").data("flashfailed");
+
+        // Jika terjadi perubahan CRUD
+        if (flashSuccess) {
+            Swal.fire({
+                title: "Data Tag",
+                text: "Berhasil " + flashSuccess,
+                icon: "success",
+            });
+        }
+
+        if (flashFailed) {
+            Swal.fire({
+                title: "Tag gagal di hapus",
+                text: flashFailed,
+                icon: "error",
+            });
+        }
+
+        // konfirmasi hapus data
+        $(document).ready(function() {
+            $(".delete-form").on("submit", function(e) {
+                e.preventDefault();
+
+                var form = this;
+
+                Swal.fire({
+                    title: "Apakah kamu yakin?",
+                    text: "Tag akan dihapus",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Hapus!",
+                    cancelButtonText: "Batal"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
         });
     </script>
 @endsection

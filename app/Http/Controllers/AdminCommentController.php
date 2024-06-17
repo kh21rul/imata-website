@@ -84,7 +84,7 @@ class AdminCommentController extends Controller
         Comment::where('id', $comment->id)
             ->update($validatedData);
 
-        return redirect()->route('comments.index')->with('success', 'Comment updated successfully.');
+        return redirect()->route('comments.index')->with('success', 'diubah!');
     }
 
     /**
@@ -96,6 +96,6 @@ class AdminCommentController extends Controller
     public function destroy(Comment $comment)
     {
         Comment::destroy($comment->id);
-        return redirect()->route('comments.index')->with('success', 'Comment deleted successfully.');
+        return redirect()->route('comments.index')->with('success', 'dihapus!');
     }
 }

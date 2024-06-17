@@ -41,8 +41,6 @@ class DashboardProductController extends Controller
      */
     public function store(Request $request)
     {
-        // return $request->file('image')->store('product-images');
-
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'price' => 'required|numeric|between:0,10000000',
@@ -56,7 +54,7 @@ class DashboardProductController extends Controller
 
         Product::create($validatedData);
 
-        return redirect()->route('products.index')->with('success', 'Product created successfully.');
+        return redirect()->route('products.index')->with('success', 'ditambahkan!');
     }
 
     /**
@@ -109,7 +107,7 @@ class DashboardProductController extends Controller
 
         Product::whereId($product->id)->update($validatedData);
 
-        return redirect()->route('products.index')->with('success', 'Product updated successfully.');
+        return redirect()->route('products.index')->with('success', 'diubah!');
     }
 
     /**
@@ -125,6 +123,6 @@ class DashboardProductController extends Controller
         }
 
         Product::destroy($product->id);
-        return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
+        return redirect()->route('products.index')->with('success', 'dihapus!');
     }
 }

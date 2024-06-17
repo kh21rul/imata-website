@@ -1,6 +1,9 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
+    {{-- Tangkap session & Muculkan modal sweetalert --}}
+    <div class="flash-data" data-flashdata="{{ session('success') }}"></div>
+
     <div class="main-content">
         <section class="section">
             <div class="section-header">
@@ -17,12 +20,6 @@
                             <div class="card-header">
                                 <h4>Data Post</h4>
                             </div>
-
-                            @if (session('success'))
-                                <div class="alert alert-success">
-                                    {{ session('success') }}
-                                </div>
-                            @endif
 
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -69,10 +66,10 @@
                                                                 type="button" class="btn btn-warning"><i
                                                                     class="fas fa-pen-alt"></i></a>
                                                             <form action="/dashboard/posts/{{ $post->slug }}"
-                                                                method="post">
+                                                                method="post" class="delete-form">
                                                                 @csrf
                                                                 @method('delete')
-                                                                <button type="submit" class="btn btn-danger btn-del"><i
+                                                                <button type="submit" class="btn btn-danger"><i
                                                                         class="fas fa-trash-alt"></i></button>
                                                             </form>
                                                         </div>
@@ -91,4 +88,43 @@
             </div>
         </section>
     </div>
+@endsection
+
+@section('page-script')
+    <script>
+        const flashData = $(".flash-data").data("flashdata");
+
+        // Jika terjadi perubahan CRUD
+        if (flashData) {
+            Swal.fire({
+                title: "Data Postingan",
+                text: "Berhasil " + flashData,
+                icon: "success",
+            });
+        }
+
+        // konfirmasi hapus data
+        $(document).ready(function() {
+            $(".delete-form").on("submit", function(e) {
+                e.preventDefault();
+
+                var form = this;
+
+                Swal.fire({
+                    title: "Apakah kamu yakin?",
+                    text: "Postingan akan dihapus",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Hapus!",
+                    cancelButtonText: "Batal"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    </script>
 @endsection

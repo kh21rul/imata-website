@@ -98,6 +98,6 @@ class PostController extends Controller
             'post_id' => $post->id
         ]);
 
-        return back();
+        return back()->with('success', 'ditambahkan!');
     }
 }

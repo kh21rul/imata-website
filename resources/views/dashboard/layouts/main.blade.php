@@ -77,6 +77,11 @@
     <script src="{{ asset('dbuser/assets/js/page/modules-datatables.js') }}"></script>
     <script src="{{ asset('dbuser/assets/js/page/modules-sweetalert.js') }}"></script>
     <script src="{{ asset('dbuser/assets/js/page/bootstrap-modal.js') }}"></script>
+
+    {{-- Tambahkan js section dari halaman --}}
+    @yield('page-script')
+    {{-- End Tambahkan js section dari halaman --}}
+
     <script>
         var ctx = document.getElementById("myChart2").getContext('2d');
         var myChart = new Chart(ctx, {

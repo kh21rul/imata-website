@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tag;
-use App\Models\Category;
 use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 
@@ -47,7 +46,7 @@ class AdminTagController extends Controller
 
         Tag::create($validatedData);
 
-        return redirect()->route('tags.index')->with('success', 'Tag created successfully');
+        return redirect()->route('tags.index')->with('success', 'ditambahkan!');
     }
 
     /**
@@ -91,7 +90,7 @@ class AdminTagController extends Controller
 
         $tag->update($validatedData);
 
-        return redirect()->route('tags.index')->with('success', 'Tag updated successfully');
+        return redirect()->route('tags.index')->with('success', 'diubah!');
     }
 
     /**
@@ -102,9 +101,12 @@ class AdminTagController extends Controller
      */
     public function destroy(Tag $tag)
     {
+        // Hapus hubungan di tabel pivot
+        $tag->posts()->detach();
+
         $tag->delete();
 
-        return redirect()->route('tags.index')->with('success', 'Tag deleted successfully');
+        return redirect()->route('tags.index')->with('success', 'dihapus!');
     }
 
     public function checkSlug(Request $request)

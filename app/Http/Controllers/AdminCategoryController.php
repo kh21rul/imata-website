@@ -47,7 +47,7 @@ class AdminCategoryController extends Controller
 
         Category::create($validatedData);
 
-        return redirect()->route('categories.index')->with('success', 'Category created successfully');
+        return redirect()->route('categories.index')->with('success', 'ditambahkan!');
     }
 
     /**
@@ -91,7 +91,7 @@ class AdminCategoryController extends Controller
 
         $category->update($validatedData);
 
-        return redirect()->route('categories.index')->with('success', 'Category updated successfully');
+        return redirect()->route('categories.index')->with('success', 'diubah!');
     }
 
     /**
@@ -104,13 +104,13 @@ class AdminCategoryController extends Controller
     {
         // memeriksa apakah ada artikel yang masih terkait dengan kategori yang akan dihapus
         if ($category->posts()->exists()) {
-            return redirect()->back()->with('success', 'Harap ubah kategori pada artikel yang terkait terlebih dahulu');
+            return redirect()->back()->with('failed', 'Harap ubah kategori pada artikel yang terkait terlebih dahulu');
         }
 
         // menghapus kategori jika tidak ada artikel yang terkait
         Category::destroy($category->id);
 
-        return redirect()->route('categories.index')->with('success', 'Kategori berhasil dihapus');
+        return redirect()->route('categories.index')->with('success', 'dihapus!');
     }
 
     public function checkSlug(Request $request)

@@ -1,6 +1,9 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
+    {{-- Tangkap session & Muculkan modal sweetalert --}}
+    <div class="flash-success" data-flashsuccess="{{ session('success') }}"></div>
+
     <!-- Main Content -->
     <div class="main-content">
         <section class="section">
@@ -19,11 +22,6 @@
                             <div class="card-header">
                                 <h4>Data Komentar</h4>
                             </div>
-                            @if (session('success'))
-                                <div class="alert alert-success">
-                                    {{ session('success') }}
-                                </div>
-                            @endif
                             <div class="card-body">
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade active show" id="komen" role="tabpanel"
@@ -55,11 +53,10 @@
                                                                         type="button" class="btn btn-warning"><i
                                                                             class="fas fa-pen-alt"></i></a>
                                                                     <form action="/dashboard/comments/{{ $comment->id }}"
-                                                                        method="post">
+                                                                        method="post" class="delete-form">
                                                                         @csrf
                                                                         @method('delete')
-                                                                        <button type="submit"
-                                                                            class="btn btn-danger btn-del"><i
+                                                                        <button type="submit" class="btn btn-danger"><i
                                                                                 class="fas fa-trash-alt"></i></button>
                                                                     </form>
                                                                 </div>
@@ -78,4 +75,43 @@
             </div>
         </section>
     </div>
+@endsection
+
+@section('page-script')
+    <script>
+        const flashSuccess = $(".flash-success").data("flashsuccess");
+
+        // Jika terjadi perubahan CRUD
+        if (flashSuccess) {
+            Swal.fire({
+                title: "Data Komentar",
+                text: "Berhasil " + flashSuccess,
+                icon: "success",
+            });
+        }
+
+        // konfirmasi hapus data
+        $(document).ready(function() {
+            $(".delete-form").on("submit", function(e) {
+                e.preventDefault();
+
+                var form = this;
+
+                Swal.fire({
+                    title: "Apakah kamu yakin?",
+                    text: "Komentar akan dihapus",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Hapus!",
+                    cancelButtonText: "Batal"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    </script>
 @endsection

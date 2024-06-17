@@ -67,7 +67,7 @@ class DashboardPostController extends Controller
         $post = Post::create($validatedData);
         $post->tags()->attach($request->tags);
 
-        return redirect('/dashboard/posts')->with('success', 'Post created successfully !');
+        return redirect('/dashboard/posts')->with('success', 'ditambahkan!');
     }
 
     /**
@@ -138,7 +138,7 @@ class DashboardPostController extends Controller
             $post->tags()->detach();
         }
 
-        return redirect('/dashboard/posts')->with('success', 'Post updated successfully !');
+        return redirect('/dashboard/posts')->with('success', 'diubah!');
     }
 
     /**
@@ -149,11 +149,15 @@ class DashboardPostController extends Controller
      */
     public function destroy(Post $post)
     {
+        // Hapus komentar terkait
+        $post->comments()->delete();
+
         if ($post->image) {
             Storage::delete($post->image);
         }
+
         Post::destroy($post->id);
-        return redirect('/dashboard/posts')->with('success', 'Post deleted successfully !');
+        return redirect('/dashboard/posts')->with('success', 'dihapus!');
     }
 
     public function checkSlug(Request $request)

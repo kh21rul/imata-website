@@ -171,7 +171,7 @@
         </div>
     </section><!-- End divisi Section -->
 
-    <!-- ======= divisi Section ======= -->
+    <!-- ======= berita Section ======= -->
     <section id="berita" class="berita">
         <div class="container">
 
@@ -206,7 +206,7 @@
 
 
         </div>
-    </section><!-- End divisi Section -->
+    </section><!-- End berita Section -->
 
     <!-- kontak -->
     <section id="kontak" class="kontak">
@@ -217,8 +217,7 @@
                         <div class="card-body p-lg-5">
                             <div class="row">
                                 <div class="col-lg-6 mb-5">
-                                    <form action="/contact" method="post">
-                                        @csrf
+                                    <form action="#">
                                         <h3>Kontak Kami</h3>
                                         <div class="row g-2 mt-4 mb-3">
                                             <div class="col-md">
@@ -240,7 +239,7 @@
                                         <div class="mb-3">
                                             <label for="message" class="form-label">Pesan</label>
                                             <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tulis Pesan Anda ..."
-                                                required>ired></textarea>
+                                                required></textarea>
                                             </pre>
                                         </div>
                                         @if (Session::has('status'))
@@ -248,7 +247,7 @@
                                         @endif
                                         <div class="d-grid gap-2">
                                             <button class="btn btn-warning text-light mt-5" name="kirim"
-                                                type="submit">Kirim</button>
+                                                type="button">Kirim</button>
                                         </div>
                                     </form>
                                 </div>
