@@ -16,9 +16,9 @@ class LoginController extends Controller
         $this->meta->keywords = 'login imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Login Website Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-        $this->meta->url = 'https://imata.web.id/login';
+        $this->meta->url = env('APP_URL') . '/login';
         $this->meta->type = 'login';
-        $this->meta->image = 'https://imata.web.id/img/logo.png';
+        $this->meta->image = env('APP_URL') . '/img/logo.png';
     }
     public function index()
     {

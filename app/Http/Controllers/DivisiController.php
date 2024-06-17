@@ -15,9 +15,9 @@ class DivisiController extends Controller
         $this->meta->keywords = 'divisi imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Semua Divisi Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara.';
-        $this->meta->url = 'https://imata.web.id/divisi';
+        $this->meta->url = env('APP_URL') . '/divisi';
         $this->meta->type = 'divisi';
-        $this->meta->image = 'https://imata.web.id/img/logo.png';
+        $this->meta->image = env('APP_URL') . '/img/logo.png';
     }
 
     public function show($divisi)
@@ -47,7 +47,7 @@ class DivisiController extends Controller
 
         $this->meta->keywords = 'divisi ' . $nama_divisi . ' imata lhokseumawe - aceh utara, divisi imata lhokseumawe - aceh utara, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->description = 'Divisi ' . $nama_divisi . ' Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara.';
-        $this->meta->url = 'https://imata.web.id/divisi/' . $url_divisi;
+        $this->meta->url = env('APP_URL') . '/divisi/' . $url_divisi;
 
         return view('divisi', [
             'title' => $nama_divisi,

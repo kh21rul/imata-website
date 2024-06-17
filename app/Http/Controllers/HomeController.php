@@ -17,9 +17,9 @@ class HomeController extends Controller
         $this->meta->keywords = 'imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Ikatan Mahasiswa Aceh Tamiang (IMATA) adalah sebuah organisasi yang terdiri dari mahasiswa-mahasiswa Aceh Tamiang yang berkuliah di Lhokseumawe - Aceh Utara. IMATA bertujuan untuk mempererat tali silaturahmi antara mahasiswa Aceh Tamiang, serta untuk memajukan dan mengembangkan potensi-potensi yang ada di Aceh Tamiang.';
-        $this->meta->url = 'https://imata.web.id';
+        $this->meta->url = env('APP_URL');
         $this->meta->type = 'website';
-        $this->meta->image = 'https://imata.web.id/img/logo.png';
+        $this->meta->image = env('APP_URL') . '/img/logo.png';
     }
 
     public function index()

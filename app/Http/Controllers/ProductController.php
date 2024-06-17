@@ -16,9 +16,9 @@ class ProductController extends Controller
         $this->meta->keywords = 'imata shop, imata lhokseumawe - aceh utara, imata, tamiang, mahasiswa tamiang';
         $this->meta->author = 'INFOKOM IMATA';
         $this->meta->description = 'Shop Ikatan Mahasiswa Aceh Tamiang, Lhokseumawe - Aceh Utara';
-        $this->meta->url = 'https://imata.web.id/toko';
+        $this->meta->url = env('APP_URL') .  '/toko';
         $this->meta->type = 'toko';
-        $this->meta->image = 'https://imata.web.id/img/logo.png';
+        $this->meta->image = env('APP_URL') .  '/img/logo.png';
     }
 
     public function index()
