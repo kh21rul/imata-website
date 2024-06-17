@@ -55,7 +55,6 @@
     <!-- _Template Main JS File_ -->
     <script src="{{ asset('js/main.js') }}"></script>
 
-
     <!-- Js Library for galery -->
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>

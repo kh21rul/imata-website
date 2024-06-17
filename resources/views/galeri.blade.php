@@ -43,6 +43,7 @@
 @endsection
 
 @section('page-script')
+    <script src="{{ asset('js/jquery.justifiedGallery.js') }}"></script>
     <script>
         $('#susunan').justifiedGallery({
             rowHeight: 250,
@@ -62,5 +63,4 @@
             }
         })
     </script>
-    <script src="{{ asset('js/jquery.justifiedGallery.js') }}"></script>
 @endsection
