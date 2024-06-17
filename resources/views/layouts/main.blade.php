@@ -58,7 +58,6 @@
 
     <!-- Js Library for galery -->
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.justifiedGallery.js') }}"></script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('dbuser/node_modules/sweetalert/dist/sweetalert.min.js') }}"></script>
 

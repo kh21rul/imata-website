@@ -62,4 +62,5 @@
             }
         })
     </script>
+    <script src="{{ asset('js/jquery.justifiedGallery.js') }}"></script>
 @endsection
