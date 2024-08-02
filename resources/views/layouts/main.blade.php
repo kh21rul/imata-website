@@ -28,6 +28,13 @@
     <link rel="stylesheet" href="{{ asset('css/justifiedGallery.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
 
+    {{-- <style>
+        .back-to-top {
+            bottom: 200px;
+            /* Atur sesuai keinginan Anda */
+        }
+    </style> --}}
+
 </head>
 
 <body>
@@ -40,7 +47,11 @@
 
     @include('partials.footer')
 
-    <a href="#" class="back-to-top btn btn-warning d-flex align-items-center justify-content-center"><i
+    {{-- <a href="#" class="back-to-top btn btn-warning d-flex align-items-start justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> --}}
+
+    <a href="#"
+        class="back-to-top btn btn-warning position-fixed bottom-0 start-0 m-3 d-flex align-items-start justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
