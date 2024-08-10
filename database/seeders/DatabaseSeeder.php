@@ -5,14 +5,10 @@ namespace Database\Seeders;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Comment;
-use App\Models\Product;
 use App\Models\Category;
 use App\Models\Division;
 use App\Models\Tag;
-use App\Models\Pengurus;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
 
 class DatabaseSeeder extends Seeder
 {

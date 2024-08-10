@@ -89,21 +89,21 @@
             </div>
 
             <div class="row content justify-content-center">
-                @foreach ($divisi as $d)
+                @foreach ($divisions[0]->members as $member)
                     <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
                         <div class="pengurus">
                             <div class="pengurus-img">
-                                @if (file_exists(public_path('img/foto-pengurus/' . $d['foto'])))
-                                    <img src="{{ asset('img/foto-pengurus/' . $d['foto']) }}" class="img-fluid"
-                                        alt="{{ $d['nama'] }}">
+                                @if ($member->photo)
+                                    <img src="{{ asset('storage/' . $member->photo) }}" class="img-fluid"
+                                        alt="{{ $member->name }}">
                                 @else
-                                    <img src="{{ asset('img/foto-pengurus/pengurus-default.png') }}" class="img-fluid"
+                                    <img src="{{ asset('img/pengurus-default.png') }}" class="img-fluid"
                                         alt="pengurus-default">
                                 @endif
                             </div>
                             <div class="pengurus-info">
-                                <h4>{{ $d['nama'] }}</h4>
-                                <span>{{ $d['jabatan'] }}</span>
+                                <h4>{{ $member->name }}</h4>
+                                <span>{{ $member->position }}</span>
                             </div>
                         </div>
                     </div>
@@ -122,51 +122,13 @@
             </div>
 
             <div class="row content justify-content-center">
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/koordinator">KOORDINATOR WILAYAH</a></h4>
+                @foreach ($divisions->skip(1) as $division)
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
+                        <div class="icon-box">
+                            <h4 class="title"><a href="/divisi/{{ $division->slug }}">{{ $division->title }}</a></h4>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/agama">AGAMA</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/kaderisasi">KADERISASI</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/sekretariat">KESEKRETARIATAN</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/infokom">INFORMASI DAN KOMUNIKASI</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/humas">HUBUNGAN MASYARAKAT</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/kwh">KEWIRAUSAHAAN</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/seni">SENI DAN BUDAYA</a></h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-3 mb-lg-4">
-                    <div class="icon-box">
-                        <h4 class="title"><a href="/divisi/olahraga">Pemuda dan Olahraga</a></h4>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section><!-- End divisi Section -->

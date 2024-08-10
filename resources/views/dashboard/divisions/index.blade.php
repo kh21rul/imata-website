@@ -16,7 +16,7 @@
                 <h1>Divisi Kepengurusan</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item">Pengurus</div>
+                    <div class="breadcrumb-item">Kepengurusan</div>
                     <div class="breadcrumb-item">Divisi</div>
                 </div>
             </div>
@@ -38,7 +38,6 @@
                                             <tr>
                                                 <th>NO</th>
                                                 <th>Nama Divisi</th>
-                                                <th>Urutan Divisi</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -49,7 +48,6 @@
                                                         {{ ($divisions->currentPage() - 1) * $divisions->perPage() + $loop->iteration }}
                                                     </td>
                                                     <td>{{ $division->title }}</td>
-                                                    <td>{{ $division->sort }}</td>
                                                     <td>
                                                         <div class="btn-group mb-3" role="group"
                                                             aria-label="Basic example">

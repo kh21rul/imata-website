@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Divisi;
+use App\Models\Division;
 use App\Models\Post;
 use stdClass;
 
@@ -27,7 +27,7 @@ class HomeController extends Controller
         return view('home', [
             'title' => 'Ikatan Mahasiswa Aceh Tamiang',
             'meta' => $this->meta,
-            'divisi' => Divisi::find2(),
+            'divisions' => Division::orderByRaw('CAST(sort AS UNSIGNED)')->get(),
             'posts' => Post::latest()->paginate(3)
         ]);
     }

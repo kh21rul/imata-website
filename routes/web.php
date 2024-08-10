@@ -1,19 +1,19 @@
 <?php
 
-use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\DivisiController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\AdminTagController;
+use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AdminCommentController;
 use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\DashboardMemberController;
 use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DashboardDivisionController;
 
@@ -30,7 +30,7 @@ use App\Http\Controllers\DashboardDivisionController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/sejarah', [SejarahController::class, 'index']);
-Route::get('/divisi/{divisi}', [DivisiController::class, 'show']);
+Route::get('/divisi/{division:slug}', [DivisionController::class, 'show']);
 
 Route::controller(PostController::class)->group(function () {
     Route::get('/blog', 'index');
@@ -40,20 +40,6 @@ Route::controller(PostController::class)->group(function () {
 
 Route::get('/galeri', [GaleryController::class, 'index']);
 Route::get('/toko', [ProductController::class, 'index']);
-
-// Route::get('/events', function () {
-//     return view('events', [
-//         'active' => 'events',
-//         'title' => 'Events',
-//     ]);
-// });
-
-// Route::get('/prestasi', function () {
-//     return view('prestasi', [
-//         'active' => 'prestasi',
-//         'title' => 'Prestasi',
-//     ]);
-// });
 
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'index')->name('login')->middleware('guest');
@@ -77,3 +63,5 @@ Route::resource('/dashboard/comments', AdminCommentController::class)->middlewar
 Route::resource('/dashboard/products', DashboardProductController::class)->middleware('auth');
 
 Route::resource('/dashboard/divisions', DashboardDivisionController::class)->middleware('auth');
+
+Route::resource('/dashboard/members', DashboardMemberController::class)->middleware('auth');
