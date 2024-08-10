@@ -22,16 +22,21 @@
                             href="/dashboard/products/create">Tambah Produk</a></li>
                     <li
                         class="{{ Request::is('dashboard/products') || Request::is('dashboard/products/*/edit') ? 'active' : '' }}">
-                        <a class="nav-link" href="/dashboard/products">Produk</a></li>
+                        <a class="nav-link" href="/dashboard/products">Produk</a>
+                    </li>
                 </ul>
             </li>
-            {{-- <li class="nav-item dropdown">
-            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>Pengurus</span></a>
-            <ul class="dropdown-menu">
-                <li><a class="nav-link" href="#">Tambah divisi</a></li>
-                <li><a class="nav-link" href="#">IPTEK dan Kajian Ilmiah</a></li>
-            </ul>
-            </li> --}}
+            <li
+                class="nav-item dropdown {{ Request::is('dashboard/divisions') || Request::is('dashboard/members') ? 'active' : '' }}">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i>
+                    <span>Kepengurusan</span></a>
+                <ul class="dropdown-menu">
+                    <li class="{{ Request::is('dashboard/divisions') ? 'active' : '' }}"><a class="nav-link"
+                            href="/dashboard/divisions">Divisi</a></li>
+                    <li class="{{ Request::is('dashboard/members') ? 'active' : '' }}"><a class="nav-link"
+                            href="/dashboard/members">Pengurus</a></li>
+                </ul>
+            </li>
             <li
                 class="nav-item dropdown {{ Request::is('dashboard/posts*') || Request::is('dashboard/categories*') || Request::is('dashboard/tags*') || Request::is('dashboard/comments*') ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-newspaper"></i>
@@ -40,19 +45,23 @@
                     @can('admin')
                         <li
                             class="{{ Request::is('dashboard/categories') || Request::is('dashboard/categories/*/edit') ? 'active' : '' }}">
-                            <a class="nav-link" href="/dashboard/categories">Kategori</a></li>
+                            <a class="nav-link" href="/dashboard/categories">Kategori</a>
+                        </li>
                         <li
                             class="{{ Request::is('dashboard/tags') || Request::is('dashboard/tags/*/edit') ? 'active' : '' }}">
-                            <a class="nav-link" href="/dashboard/tags">Tags</a></li>
+                            <a class="nav-link" href="/dashboard/tags">Tags</a>
+                        </li>
                     @endcan
                     <li class="{{ Request::is('dashboard/posts/create') ? 'active' : '' }}"><a class="nav-link"
                             href="/dashboard/posts/create">Tambah Post</a></li>
                     <li
                         class="{{ Request::is('dashboard/posts') || Request::is('dashboard/posts/*/edit') ? 'active' : '' }}">
-                        <a class="nav-link" href="/dashboard/posts">Post</a></li>
+                        <a class="nav-link" href="/dashboard/posts">Post</a>
+                    </li>
                     <li
                         class="{{ Request::is('dashboard/comments') || Request::is('dashboard/comments/*/edit') ? 'active' : '' }}">
-                        <a class="nav-link" href="/dashboard/comments">Komentar</a></li>
+                        <a class="nav-link" href="/dashboard/comments">Komentar</a>
+                    </li>
                 </ul>
             </li>
             {{-- <li class="nav-item dropdown">

@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Comment;
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\Division;
 use App\Models\Tag;
 use App\Models\Pengurus;
 use Illuminate\Database\Seeder;
@@ -26,7 +27,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             CategorySeeder::class,
             TagSeeder::class,
-            ProductSeeder::class
+            ProductSeeder::class,
+            Division::class,
         ]);
 
         $posts = Post::factory(20)->recycle([

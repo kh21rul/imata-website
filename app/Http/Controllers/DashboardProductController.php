@@ -17,7 +17,7 @@ class DashboardProductController extends Controller
     {
         return view('dashboard.products.index', [
             'title' => 'Products',
-            'products' => Product::latest()->paginate(10)
+            'products' => Product::latest()->get()
         ]);
     }
 
@@ -43,7 +43,7 @@ class DashboardProductController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'price' => 'required|numeric|between:0,10000000',
+            'price' => 'required|numeric',
             'description' => 'required',
             'image' => 'image|file|max:2048',
         ]);

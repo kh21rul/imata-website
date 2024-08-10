@@ -1,20 +1,21 @@
 <?php
 
+use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DivisiController;
-use App\Http\Controllers\SejarahController;
 use App\Http\Controllers\GaleryController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\DashboardPostController;
-use App\Http\Controllers\AdminCategoryController;
-use App\Http\Controllers\AdminTagController;
-use App\Http\Controllers\AdminCommentController;
-use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\ProductController;
-use Spatie\Sitemap\SitemapGenerator;
+use App\Http\Controllers\SejarahController;
+use App\Http\Controllers\AdminTagController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminCommentController;
+use App\Http\Controllers\AdminCategoryController;
+use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\DashboardProductController;
+use App\Http\Controllers\DashboardDivisionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,3 +75,5 @@ Route::resource('/dashboard/tags', AdminTagController::class)->except('show')->m
 Route::resource('/dashboard/comments', AdminCommentController::class)->middleware('auth');
 
 Route::resource('/dashboard/products', DashboardProductController::class)->middleware('auth');
+
+Route::resource('/dashboard/divisions', DashboardDivisionController::class)->middleware('auth');
