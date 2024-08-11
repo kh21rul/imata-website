@@ -114,7 +114,7 @@
                                     </div>
                                     <div class="card-wrap">
                                         <div class="card-header">
-                                            <h4>Post</h4>
+                                            <h4>Total Berita</h4>
                                         </div>
                                         <div class="card-body">
                                             {{ $totalPosts }}
@@ -122,32 +122,47 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="col-12">
-                                <div class="card card-statistic-1">
-                                    <div class="card-icon bg-danger">
-                                        <i class="fas fa-calendar-alt"></i>
-                                    </div>
-                                    <div class="card-wrap">
-                                        <div class="card-header">
-                                            <h4>Event</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            0
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
                             <div class="col-12">
                                 <div class="card card-statistic-1">
-                                    <div class="card-icon bg-warning">
+                                    <div class="card-icon bg-danger">
                                         <i class="fas fa-shopping-bag"></i>
                                     </div>
                                     <div class="card-wrap">
                                         <div class="card-header">
-                                            <h4>Shop</h4>
+                                            <h4>Total Produk</h4>
                                         </div>
                                         <div class="card-body">
-                                            {{ $products->count() }}
+                                            {{ $totalProducts }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card card-statistic-1">
+                                    <div class="card-icon bg-warning">
+                                        <i class="fas fas fa-users"></i>
+                                    </div>
+                                    <div class="card-wrap">
+                                        <div class="card-header">
+                                            <h4>Total Divisi</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            {{ $totalDivisi }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card card-statistic-1">
+                                    <div class="card-icon bg-success">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="card-wrap">
+                                        <div class="card-header">
+                                            <h4>Total Pengurus</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            {{ $totalPengurus }}
                                         </div>
                                     </div>
                                 </div>
