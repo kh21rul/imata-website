@@ -25,7 +25,7 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th class="text-center">NO</th>
+                                                <th class="text-center">No</th>
                                                 <th>Gambar</th>
                                                 <th>Nama</th>
                                                 <th>Deskripsi</th>
@@ -34,12 +34,11 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @php
-                                                $start = ($products->currentPage() - 1) * $products->perPage() + 1;
-                                            @endphp
                                             @foreach ($products as $product)
                                                 <tr>
-                                                    <td>{{ $start++ }}</td>
+                                                    <td>
+                                                        {{ ($products->currentPage() - 1) * $products->perPage() + $loop->iteration }}
+                                                    </td>
                                                     <td>
                                                         <div class="gallery">
                                                             @if ($product->image)
@@ -75,7 +74,7 @@
                                             @endforeach
                                         </tbody>
                                     </table>
-                                    {{ $products->appends(['start' => $start])->links() }}
+                                    {{ $products->links() }}
                                 </div>
                             </div>
                         </div>
