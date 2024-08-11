@@ -3,12 +3,12 @@
 @section('container')
     {{-- Tangkap session & Muculkan modal sweetalert --}}
     <div class="flash-success" data-flashsuccess="{{ session('success') }}"></div>
-    @error('title')
-        <div class="flash-error" data-flasherror="{{ $message }}"></div>
-    @enderror
-    @error('sort')
-        <div class="flash-error" data-flasherror="{{ $message }}"></div>
-    @enderror
+
+    @if ($errors->any())
+        @foreach ($errors->all() as $error)
+            <div class="flash-error" data-flasherror="{{ $error }}"></div>
+        @endforeach
+    @endif
 
     <div class="main-content">
         <section class="section">

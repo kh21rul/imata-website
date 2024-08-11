@@ -46,8 +46,10 @@
                     </div>
                 @endforeach
             </div>
+
         </div>
-    </section><!-- End Pengurus Section -->
+    </section>
+    <!-- End Pengurus Section -->
 
     {{-- <section class="progja">
     <div class="container">

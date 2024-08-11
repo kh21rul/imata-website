@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="form-group row mb-4">
                                         <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"
-                                            for="Category">Kategori</label>
+                                            for="category_id">Kategori</label>
                                         <div class="col-sm-12 col-md-7">
                                             <select class="form-control select2" name="category_id" required>
                                                 <option selected>Pilih Kategori</option>
@@ -128,7 +128,9 @@
             </div>
         </section>
     </div>
+@endsection
 
+@section('page-script')
     <script>
         const title = document.getElementById('title');
         const slug = document.getElementById('slug');
