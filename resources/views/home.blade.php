@@ -88,27 +88,30 @@
                 <p>Pengurus Teras</p>
             </div>
 
-            <div class="row content justify-content-center">
-                @foreach ($divisions[0]->members as $member)
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="pengurus">
-                            <div class="pengurus-img">
-                                @if ($member->photo)
-                                    <img src="{{ asset('storage/' . $member->photo) }}" class="img-fluid"
-                                        alt="{{ $member->name }}">
-                                @else
-                                    <img src="{{ asset('img/pengurus-default.png') }}" class="img-fluid"
-                                        alt="pengurus-default">
-                                @endif
-                            </div>
-                            <div class="pengurus-info">
-                                <h4>{{ $member->name }}</h4>
-                                <span>{{ $member->position }}</span>
+            @if ($divisions->isNotEmpty())
+                <div class="row content justify-content-center">
+                    @foreach ($divisions[0]->members as $member)
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="pengurus">
+                                <div class="pengurus-img">
+                                    @if ($member->photo)
+                                        <img src="{{ asset('storage/' . $member->photo) }}" class="img-fluid"
+                                            alt="{{ $member->name }}">
+                                    @else
+                                        <img src="{{ asset('img/pengurus-default.png') }}" class="img-fluid"
+                                            alt="pengurus-default">
+                                    @endif
+                                </div>
+                                <div class="pengurus-info">
+                                    <h4>{{ $member->name }}</h4>
+                                    <span>{{ $member->position }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+            @endif
+
         </div>
     </section><!-- End teras Section -->
 
