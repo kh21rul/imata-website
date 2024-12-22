@@ -56,7 +56,7 @@
                                                                 class="btn btn-warning">
                                                                 <i class="fas fa-pen-alt"></i>
                                                             </button>
-                                                            <form action="/dashboard/divisions/{{ $division->id }}"
+                                                            <form action="/dashboard/divisions/{{ $division->slug }}"
                                                                 method="post" class="delete-form">
                                                                 @csrf
                                                                 @method('delete')
@@ -134,7 +134,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <form action="/dashboard/divisions/{{ $division->id }}" method="post">
+                    <form action="/dashboard/divisions/{{ $division->slug }}" method="post">
                         @method('put')
                         @csrf
                         <div class="modal-body">
