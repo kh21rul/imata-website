@@ -55,6 +55,13 @@
 
                             {!! $post->body !!}
 
+                            <!-- IKLAN ADSTERRA -->
+                            <div class="my-4 text-center">
+                                <script async="async" data-cfasync="false"
+                                    src="https://pl28925715.effectivegatecpm.com/00888b890187a04579f89a67eab9e584/invoke.js"></script>
+                                <div id="container-00888b890187a04579f89a67eab9e584"></div>
+                            </div>
+
                             <div class="tag">
                                 <i class="bi bi-tags"></i>Tags:
                                 @foreach ($post->tags as $tag)
